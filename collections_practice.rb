@@ -28,6 +28,8 @@ end
 
 def kesha_maker (array)
   array.collect do |word|
-    word[3] = '$'
+    part = word.split
+    part[2] = '$'
+    part.join
   end
 end
